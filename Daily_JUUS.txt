@@ -40,6 +40,28 @@ tap 67 14  # 受取確認
 wait 5000
 tap 67 14  # メール画面を閉じる
 
+# 演習
+wait 5000
+tap 85 50  # 出撃
+wait 5000
+tap 81 85  # 演習
+loop 10
+wait 5000
+tap 16 21  # 一番左の演習相手を選択
+wait 5000
+tap 50 78  # 演習開始
+wait 5000
+tap 89 88  # 戦闘開始
+wait 180000
+tap 85 85  # その辺を押す
+wait 5000
+tap 85 85  # 戦果の受け取り
+wait 5000
+tap 85 91  # 確定
+loopEnd
+wait 5000
+tap 95 5  # ホーム直行
+
 # ハード海域
 wait 5000
 tap 85 50  # 出撃
@@ -63,12 +85,12 @@ wait 5000
 tap 84 83  # 出撃へ
 loop 2
 wait 200000
-tap 66 86 # 再度出撃（2回）
+tap 66 86  # 再度出撃（2回）
 loopEnd
 wait 200000
-tap 35 86 # 戻る
+tap 35 86  # 戻る
 wait 5000
-tap 95 5 # ホーム直行
+tap 95 5  # ホーム直行
 
 # META戦（開催中）
 wait 5000
